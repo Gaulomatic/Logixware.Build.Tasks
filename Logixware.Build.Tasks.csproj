@@ -1,0 +1,33 @@
+
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard1.6;netstandard1.3;netstandard1.1</TargetFrameworks>
+		<Deterministic>false</Deterministic>
+		<RootNamespace>Logixware.Build.Tasks</RootNamespace>
+    	<VersionPrefix>1.0.4</VersionPrefix>
+		<PackageProjectUrl>https://github.com/Gaulomatic/Logixware.Build.Tasks</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/Gaulomatic/Logixware.Build.Tasks/blob/master/LICENSE</PackageLicenseUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<Content Include="Tasks\Task.AssemblyInfo.targets">
+			<Pack>true</Pack>
+			<PackagePath>Tasks</PackagePath>
+		</Content>
+
+		<Content Include="Tasks\Task.Dnn.CopyAssembly.targets">
+			<Pack>true</Pack>
+			<PackagePath>Tasks</PackagePath>
+		</Content>
+
+		<Content Include="Tasks\Task.Dnn.Package.targets">
+			<Pack>true</Pack>
+			<PackagePath>Tasks</PackagePath>
+		</Content>
+
+	</ItemGroup>
+
+</Project>
